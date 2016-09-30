@@ -19,6 +19,7 @@ switch (true) {
         throw new RuntimeException('Unable to locate Composer autoloader; please run "composer install".');
 }
 
+use PhpSchool\phpGenerators\Exercise\Range;
 use PhpSchool\PhpWorkshop\Application;
 
 $app = new Application('PHP Generators', __DIR__ . '/config.php');
@@ -45,5 +46,7 @@ ART;
 $app->setLogo($art);
 $app->setFgColour('green');
 $app->setBgColour('black');
+
+$app->addExercise(Range::class);
 
 return $app;

@@ -2,7 +2,8 @@
 
 use function DI\factory;
 use function DI\object;
+use PhpSchool\phpGenerators\Exercise\Range;
 
 return [
-    //Define your exercise factories here
+    Range::class=>\DI\Object(),
 ];
